@@ -16,6 +16,7 @@ from data.synthetic_generator import generate_synthetic_burnin_data
 from pipeline import run_full_screening_pipeline
 from engine.audit_logger import get_audit_history
 
+
 # Page Configuration
 st.set_page_config(
     page_title="ISRO Burn-In Screening AI System",
@@ -33,34 +34,39 @@ st.markdown("""
         color: #1E293B;
         margin-bottom: 0.2rem;
     }
+
     .sub-header {
         font-size: 1.05rem;
         color: #64748B;
         margin-bottom: 1.5rem;
     }
+
     .metric-card {
-        background-color: #F8FAFC;
+        background-color: #FFFFFF;
         border-radius: 10px;
         padding: 1.2rem;
         border: 1px solid #E2E8F0;
         box-shadow: 0 1px 3px rgba(0,0,0,0.05);
     }
+
     .status-pass {
-        color: #16A34A;
+        color: #15803D;
         font-weight: bold;
         background-color: #DCFCE7;
         padding: 4px 10px;
         border-radius: 6px;
     }
+
     .status-review {
-        color: #D97706;
+        color: #B45309;
         font-weight: bold;
         background-color: #FEF3C7;
         padding: 4px 10px;
         border-radius: 6px;
     }
+
     .status-flag {
-        color: #DC2626;
+        color: #B91C1C;
         font-weight: bold;
         background-color: #FEE2E2;
         padding: 4px 10px;
